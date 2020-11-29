@@ -4,8 +4,8 @@ let newYear = document.querySelector('.newYear h1'),
     minutes = document.querySelector('.mins h1'),
     seconds = document.querySelector('.secs h1'),
     y = 2020,
-    m = 10,
-    yearEnd = new Date(y, m, 29, 17, 06, 00).getTime(),
+    m = 11,
+    yearEnd = new Date(y, m, 31, 25, 59, 59).getTime(),
     now = new Date().getTime();
 
 let countDown = setInterval(function(){
