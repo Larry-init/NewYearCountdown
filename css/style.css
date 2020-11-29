@@ -1,0 +1,60 @@
+** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("../image/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.newYear {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+.year {
+    text-align: center;
+    color: rgba(255,255,255, 0.4);
+    font-size: 100px;
+    margin: 0;
+
+}
+.newYear h1{
+    margin-top: 90px;
+}
+.countDown h1, .countDown span {
+    margin: 0;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+.countDown {
+    margin-right: 10px;
+    padding: 0 10px 0 10px;
+    background-color: rgba(255,255,255, 0.1);
+}
+.ctd {
+    font-size: 30px;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Media query for tablet devices */
+@media(max-width: 768px){
+    .newYear {
+        font-size: 30px;
+        margin-top: 20%;
+    }
+}
+
+/* Media query for mobile devices of 480px */
+@media(max-width: 480px){
+    .newYear {
+        font-size: 30px;
+        margin-top: 20%;
+    }
+}
