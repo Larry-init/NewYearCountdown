@@ -42,6 +42,13 @@ body {
     display: flex;
     justify-content: center;
 }
+.socialMedia {
+    text-align: center;
+}
+.socialMedia span{
+    color: white;
+    padding: 40px 17px;
+}
 
 /* Media query for tablet devices */
 @media(max-width: 768px){
