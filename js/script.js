@@ -5,8 +5,7 @@ let newYear = document.querySelector('.newYear h1'),
     seconds = document.querySelector('.secs h1'),
     y = 2020,
     m = 11,
-    yearEnd = new Date(y, m, 31, 25, 59, 59).getTime(),
-    now = new Date().getTime();
+    yearEnd = new Date(y, m, 31, 23, 59, 59).getTime();
 
 let countDown = setInterval(function(){
     now = new Date().getTime();
@@ -26,25 +25,18 @@ let countDown = setInterval(function(){
     minutes.innerHTML = mins;
     seconds.innerHTML = secs;
     
-    if( difference < 0){
-        clearInterval(countDown);
-        newYear.innerHTML = "Congratulation! Happy New Year!!";
-        
+    if( difference < 0)
+    {
+        for (let i = 0; i < 2038; i++)
+        {
+            yearEnd = new Date(y+1, m, 31, 23, 59, 59).getTime();
+            if(yearEnd > new Date(y+1, 0, 1, 00, 00, 00).getTime() && yearEnd < new Date(y+1, 0, 31, 23, 59, 59).getTime() )
+            {
+                newYear.innerHTML = "Congratulation! Happy New Year!!";
+                console.log(newYear.innerHTML);
+            }else{
+                newYear.innerHTML = "New Year Countdown";
+            }
+        }  
     }
 }, 1000);
-
-
-
-
-/*
-for (let i = 0; i < 2038; i++)
-{
-    yearEnd = new Date(y+1, m, 31, 23, 59, 59).getTime();
-    if(m == 0)
-    {
-        newYear.innerHTML = "Congratulation! Happy New Year!!";
-    }else{
-        newYear.innerHTML = "New Year CountDown"
-    }
-}
-*/

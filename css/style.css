@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 body {
+    max-width: 100%;
     background-image: url("../image/background.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,23 +46,39 @@ body {
 .socialMedia {
     text-align: center;
 }
-.socialMedia span{
+.socialMedia span {
     color: white;
     padding: 40px 17px;
+}
+.socialMedia span:hover {
+    padding: 17px 17px;
+    background-color:rgba(225,225,225);
 }
 
 /* Media query for tablet devices */
 @media(max-width: 768px){
     .newYear {
-        font-size: 30px;
+        font-size: 45px;
         margin-top: 20%;
+    }
+    .countDown {
+        padding: 0 30px 0 30px;
+    }
+    .countDown h1, .countDown span {
+        font-size: 40px;
+    }
+    .socialMedia {
+        margin-top: 20px;
     }
 }
 
 /* Media query for mobile devices of 480px */
 @media(max-width: 480px){
     .newYear {
-        font-size: 30px;
+        font-size: 25px;
         margin-top: 20%;
+    }
+    .year {
+        font-size: 60px;
     }
 }
