@@ -58,11 +58,11 @@ body {
 /* Media query for tablet devices */
 @media(max-width: 768px){
     .newYear {
-        font-size: 45px;
+        font-size: 35px;
         margin-top: 20%;
     }
     .countDown h1, .countDown span {
-        font-size: 40px;
+        font-size: 35px;
     }
     .socialMedia {
         margin-top: 20px;
@@ -73,7 +73,6 @@ body {
 @media(max-width: 480px){
     .newYear {
         font-size: 20px;
-        margin-top: 20%;
     }
     .countDown h1, .countDown span {
         font-size: 27px;
