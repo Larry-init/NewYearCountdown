@@ -75,9 +75,9 @@ body {
         font-size: 20px;
     }
     .countDown h1, .countDown span {
-        font-size: 27px;
+        font-size: 20px;
     }
     .year {
-        font-size: 60px;
+        font-size: 50px;
     }
 }
