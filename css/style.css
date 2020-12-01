@@ -75,8 +75,11 @@ body {
 /* Media query for mobile devices of 480px */
 @media(max-width: 480px){
     .newYear {
-        font-size: 25px;
+        font-size: 20px;
         margin-top: 20%;
+    }
+    .countDown h1, .countDown span {
+        font-size: 27px;
     }
     .year {
         font-size: 60px;
